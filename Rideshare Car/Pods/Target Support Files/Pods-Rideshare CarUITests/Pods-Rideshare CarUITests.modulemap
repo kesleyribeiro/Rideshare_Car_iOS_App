@@ -1,0 +1,6 @@
+framework module Pods_Rideshare_CarUITests {
+  umbrella header "Pods-Rideshare CarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

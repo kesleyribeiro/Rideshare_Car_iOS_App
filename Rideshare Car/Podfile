@@ -1,0 +1,16 @@
+target 'Rideshare Car' do
+  use_frameworks!
+
+  
+
+  target 'Rideshare CarTests' do
+    inherit! :search_paths
+
+  end
+
+  target 'Rideshare CarUITests' do
+    inherit! :search_paths
+
+  end
+
+end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06C1FA686686DE564AF6098B /* Pods_Rideshare_CarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0223415BD512694176D62261 /* Pods_Rideshare_CarTests.framework */; };
+		1EAA91DFF249B944A5DA6110 /* Pods_Rideshare_Car.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED9B427348F6D0338C7E5AE /* Pods_Rideshare_Car.framework */; };
+		605289529B47137C780EFDF9 /* Pods_Rideshare_CarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A31D3ED945BF8A2371A5CF /* Pods_Rideshare_CarUITests.framework */; };
 		E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */; };
 		E26C1B1E21AF4F7F006A9C99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1D21AF4F7F006A9C99 /* ViewController.swift */; };
 		E26C1B2121AF4F7F006A9C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26C1B1F21AF4F7F006A9C99 /* Main.storyboard */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0223415BD512694176D62261 /* Pods_Rideshare_CarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare_CarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE0B87B0FA57479B23772C4 /* Pods-Rideshare Car.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare Car.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare Car/Pods-Rideshare Car.debug.xcconfig"; sourceTree = "<group>"; };
+		16A31D3ED945BF8A2371A5CF /* Pods_Rideshare_CarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare_CarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB678BB2B10DEE1FC747489 /* Pods-Rideshare CarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare CarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare CarUITests/Pods-Rideshare CarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A344344193E0B0EB4F93EE2 /* Pods-Rideshare CarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare CarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare CarTests/Pods-Rideshare CarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71E27B210B16D5C69A468160 /* Pods-Rideshare CarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare CarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare CarUITests/Pods-Rideshare CarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		78C1543896C5065C211D55A4 /* Pods-Rideshare CarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare CarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare CarTests/Pods-Rideshare CarTests.release.xcconfig"; sourceTree = "<group>"; };
+		7ED9B427348F6D0338C7E5AE /* Pods_Rideshare_Car.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare_Car.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48ED58048112A31F066FDA9 /* Pods-Rideshare Car.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare Car.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare Car/Pods-Rideshare Car.release.xcconfig"; sourceTree = "<group>"; };
 		E26C1B1821AF4F7F006A9C99 /* Rideshare Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rideshare Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26C1B1D21AF4F7F006A9C99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAA91DFF249B944A5DA6110 /* Pods_Rideshare_Car.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C1FA686686DE564AF6098B /* Pods_Rideshare_CarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605289529B47137C780EFDF9 /* Pods_Rideshare_CarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0133AD6D5BC53D5843966B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED9B427348F6D0338C7E5AE /* Pods_Rideshare_Car.framework */,
+				0223415BD512694176D62261 /* Pods_Rideshare_CarTests.framework */,
+				16A31D3ED945BF8A2371A5CF /* Pods_Rideshare_CarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		641408E4A9B9580C44EB0BD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AE0B87B0FA57479B23772C4 /* Pods-Rideshare Car.debug.xcconfig */,
+				A48ED58048112A31F066FDA9 /* Pods-Rideshare Car.release.xcconfig */,
+				5A344344193E0B0EB4F93EE2 /* Pods-Rideshare CarTests.debug.xcconfig */,
+				78C1543896C5065C211D55A4 /* Pods-Rideshare CarTests.release.xcconfig */,
+				71E27B210B16D5C69A468160 /* Pods-Rideshare CarUITests.debug.xcconfig */,
+				1BB678BB2B10DEE1FC747489 /* Pods-Rideshare CarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E26C1B0F21AF4F7F006A9C99 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				E26C1B2F21AF4F81006A9C99 /* Rideshare CarTests */,
 				E26C1B3A21AF4F81006A9C99 /* Rideshare CarUITests */,
 				E26C1B1921AF4F7F006A9C99 /* Products */,
+				641408E4A9B9580C44EB0BD0 /* Pods */,
+				0133AD6D5BC53D5843966B22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26C1B4021AF4F81006A9C99 /* Build configuration list for PBXNativeTarget "Rideshare Car" */;
 			buildPhases = (
+				862AECA6348F4DAB7F9E104D /* [CP] Check Pods Manifest.lock */,
 				E26C1B1421AF4F7F006A9C99 /* Sources */,
 				E26C1B1521AF4F7F006A9C99 /* Frameworks */,
 				E26C1B1621AF4F7F006A9C99 /* Resources */,
@@ -149,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26C1B4321AF4F81006A9C99 /* Build configuration list for PBXNativeTarget "Rideshare CarTests" */;
 			buildPhases = (
+				1C48150B5EAE883AA27F367D /* [CP] Check Pods Manifest.lock */,
 				E26C1B2821AF4F81006A9C99 /* Sources */,
 				E26C1B2921AF4F81006A9C99 /* Frameworks */,
 				E26C1B2A21AF4F81006A9C99 /* Resources */,
@@ -167,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E26C1B4621AF4F81006A9C99 /* Build configuration list for PBXNativeTarget "Rideshare CarUITests" */;
 			buildPhases = (
+				10C01562867369794B2761F0 /* [CP] Check Pods Manifest.lock */,
 				E26C1B3321AF4F81006A9C99 /* Sources */,
 				E26C1B3421AF4F81006A9C99 /* Frameworks */,
 				E26C1B3521AF4F81006A9C99 /* Resources */,
@@ -250,6 +293,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10C01562867369794B2761F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rideshare CarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C48150B5EAE883AA27F367D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rideshare CarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		862AECA6348F4DAB7F9E104D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rideshare Car-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E26C1B1421AF4F7F006A9C99 /* Sources */ = {
@@ -430,6 +530,7 @@
 		};
 		E26C1B4121AF4F81006A9C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE0B87B0FA57479B23772C4 /* Pods-Rideshare Car.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +549,7 @@
 		};
 		E26C1B4221AF4F81006A9C99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48ED58048112A31F066FDA9 /* Pods-Rideshare Car.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +568,7 @@
 		};
 		E26C1B4421AF4F81006A9C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A344344193E0B0EB4F93EE2 /* Pods-Rideshare CarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +590,7 @@
 		};
 		E26C1B4521AF4F81006A9C99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C1543896C5065C211D55A4 /* Pods-Rideshare CarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +612,7 @@
 		};
 		E26C1B4721AF4F81006A9C99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E27B210B16D5C69A468160 /* Pods-Rideshare CarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +633,7 @@
 		};
 		E26C1B4821AF4F81006A9C99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB678BB2B10DEE1FC747489 /* Pods-Rideshare CarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
