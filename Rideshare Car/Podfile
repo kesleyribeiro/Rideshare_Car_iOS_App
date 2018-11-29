@@ -1,15 +1,22 @@
+
+platform :ios, '11.0'
+
 target 'Rideshare Car' do
+
   use_frameworks!
 
-  
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'RevealingSplashView'
 
   target 'Rideshare CarTests' do
-    inherit! :search_paths
+    inherit! :search_paths    # Pods for testing
 
   end
 
   target 'Rideshare CarUITests' do
-    inherit! :search_paths
+    inherit! :search_paths    # Pods for testing
 
   end
 
