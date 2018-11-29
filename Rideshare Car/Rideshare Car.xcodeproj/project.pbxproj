@@ -11,12 +11,17 @@
 		1EAA91DFF249B944A5DA6110 /* Pods_Rideshare_Car.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED9B427348F6D0338C7E5AE /* Pods_Rideshare_Car.framework */; };
 		605289529B47137C780EFDF9 /* Pods_Rideshare_CarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A31D3ED945BF8A2371A5CF /* Pods_Rideshare_CarUITests.framework */; };
 		E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */; };
-		E26C1B1E21AF4F7F006A9C99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1D21AF4F7F006A9C99 /* ViewController.swift */; };
+		E26C1B1E21AF4F7F006A9C99 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */; };
 		E26C1B2121AF4F7F006A9C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26C1B1F21AF4F7F006A9C99 /* Main.storyboard */; };
 		E26C1B2321AF4F81006A9C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26C1B2221AF4F81006A9C99 /* Assets.xcassets */; };
 		E26C1B2621AF4F81006A9C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26C1B2421AF4F81006A9C99 /* LaunchScreen.storyboard */; };
 		E26C1B3121AF4F81006A9C99 /* Rideshare_CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B3021AF4F81006A9C99 /* Rideshare_CarTests.swift */; };
 		E26C1B3C21AF4F81006A9C99 /* Rideshare_CarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B3B21AF4F81006A9C99 /* Rideshare_CarUITests.swift */; };
+		E2E166B521B08174009145E5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166B421B08174009145E5 /* GradientView.swift */; };
+		E2E166B721B09CC2009145E5 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166B621B09CC2009145E5 /* RoundImageView.swift */; };
+		E2E166B921B09E5F009145E5 /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166B821B09E5F009145E5 /* RoundShadowView.swift */; };
+		E2E166BB21B09FF9009145E5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166BA21B09FF9009145E5 /* CircleView.swift */; };
+		E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,7 @@
 		A48ED58048112A31F066FDA9 /* Pods-Rideshare Car.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare Car.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare Car/Pods-Rideshare Car.release.xcconfig"; sourceTree = "<group>"; };
 		E26C1B1821AF4F7F006A9C99 /* Rideshare Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rideshare Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E26C1B1D21AF4F7F006A9C99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E26C1B2021AF4F7F006A9C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E26C1B2221AF4F81006A9C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26C1B2521AF4F81006A9C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +64,11 @@
 		E26C1B3721AF4F81006A9C99 /* Rideshare CarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rideshare CarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26C1B3B21AF4F81006A9C99 /* Rideshare_CarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rideshare_CarUITests.swift; sourceTree = "<group>"; };
 		E26C1B3D21AF4F81006A9C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E166B421B08174009145E5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E2E166B621B09CC2009145E5 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		E2E166B821B09E5F009145E5 /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
+		E2E166BA21B09FF9009145E5 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */,
-				E26C1B1D21AF4F7F006A9C99 /* ViewController.swift */,
-				E26C1B1F21AF4F7F006A9C99 /* Main.storyboard */,
+				E2E166B321B0813D009145E5 /* Model */,
+				E2E166B221B08137009145E5 /* View */,
+				E2E166B121B08130009145E5 /* Controller */,
 				E26C1B2221AF4F81006A9C99 /* Assets.xcassets */,
-				E26C1B2421AF4F81006A9C99 /* LaunchScreen.storyboard */,
 				E26C1B2721AF4F81006A9C99 /* Info.plist */,
 			);
 			path = "Rideshare Car";
@@ -163,6 +173,35 @@
 				E26C1B3D21AF4F81006A9C99 /* Info.plist */,
 			);
 			path = "Rideshare CarUITests";
+			sourceTree = "<group>";
+		};
+		E2E166B121B08130009145E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2E166B221B08137009145E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E26C1B2421AF4F81006A9C99 /* LaunchScreen.storyboard */,
+				E26C1B1F21AF4F7F006A9C99 /* Main.storyboard */,
+				E2E166B421B08174009145E5 /* GradientView.swift */,
+				E2E166B621B09CC2009145E5 /* RoundImageView.swift */,
+				E2E166B821B09E5F009145E5 /* RoundShadowView.swift */,
+				E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */,
+				E2E166BA21B09FF9009145E5 /* CircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2E166B321B0813D009145E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,8 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26C1B1E21AF4F7F006A9C99 /* ViewController.swift in Sources */,
+				E2E166BB21B09FF9009145E5 /* CircleView.swift in Sources */,
+				E2E166B921B09E5F009145E5 /* RoundShadowView.swift in Sources */,
+				E26C1B1E21AF4F7F006A9C99 /* HomeVC.swift in Sources */,
+				E2E166B721B09CC2009145E5 /* RoundImageView.swift in Sources */,
 				E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */,
+				E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */,
+				E2E166B521B08174009145E5 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
