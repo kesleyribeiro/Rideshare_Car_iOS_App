@@ -16,6 +16,8 @@ class HomeVC: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var actBtn: RoundShadowButton!
     
+    var delegate: CenterDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,10 +28,13 @@ class HomeVC: UIViewController, MKMapViewDelegate {
     // MARK: IBAction
     
     @IBAction func actBtnWasPressed(_ sender: Any) {
-        
         actBtn.animateButton(shouldLoad: true, withMessage: nil)
     }
     
-
+    
+    @IBAction func menuBtnWasPressed(_ sender: Any) {
+        delegate?.toggleLeft()
+    }
+    
 }
 

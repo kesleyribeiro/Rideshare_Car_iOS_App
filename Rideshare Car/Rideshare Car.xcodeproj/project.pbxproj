@@ -10,6 +10,9 @@
 		06C1FA686686DE564AF6098B /* Pods_Rideshare_CarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0223415BD512694176D62261 /* Pods_Rideshare_CarTests.framework */; };
 		1EAA91DFF249B944A5DA6110 /* Pods_Rideshare_Car.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED9B427348F6D0338C7E5AE /* Pods_Rideshare_Car.framework */; };
 		605289529B47137C780EFDF9 /* Pods_Rideshare_CarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A31D3ED945BF8A2371A5CF /* Pods_Rideshare_CarUITests.framework */; };
+		E25D20DA21B9AF950066A43C /* LeftSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D20D921B9AF950066A43C /* LeftSideMenuVC.swift */; };
+		E25D20DC21B9B02C0066A43C /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D20DB21B9B02C0066A43C /* ContainerVC.swift */; };
+		E25D20DF21B9B3E80066A43C /* CenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D20DE21B9B3E80066A43C /* CenterDelegate.swift */; };
 		E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */; };
 		E26C1B1E21AF4F7F006A9C99 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */; };
 		E26C1B2121AF4F7F006A9C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26C1B1F21AF4F7F006A9C99 /* Main.storyboard */; };
@@ -51,6 +54,9 @@
 		78C1543896C5065C211D55A4 /* Pods-Rideshare CarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare CarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare CarTests/Pods-Rideshare CarTests.release.xcconfig"; sourceTree = "<group>"; };
 		7ED9B427348F6D0338C7E5AE /* Pods_Rideshare_Car.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rideshare_Car.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48ED58048112A31F066FDA9 /* Pods-Rideshare Car.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rideshare Car.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rideshare Car/Pods-Rideshare Car.release.xcconfig"; sourceTree = "<group>"; };
+		E25D20D921B9AF950066A43C /* LeftSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuVC.swift; sourceTree = "<group>"; };
+		E25D20DB21B9B02C0066A43C /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		E25D20DE21B9B3E80066A43C /* CenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDelegate.swift; sourceTree = "<group>"; };
 		E26C1B1821AF4F7F006A9C99 /* Rideshare Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rideshare Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -122,6 +128,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E25D20DD21B9B3C80066A43C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E25D20DE21B9B3E80066A43C /* CenterDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		E26C1B0F21AF4F7F006A9C99 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */,
+				E25D20DD21B9B3C80066A43C /* Protocols */,
 				E2E166B321B0813D009145E5 /* Model */,
 				E2E166B221B08137009145E5 /* View */,
 				E2E166B121B08130009145E5 /* Controller */,
@@ -179,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */,
+				E25D20D921B9AF950066A43C /* LeftSideMenuVC.swift */,
+				E25D20DB21B9B02C0066A43C /* ContainerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -423,10 +440,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E166BB21B09FF9009145E5 /* CircleView.swift in Sources */,
+				E25D20DF21B9B3E80066A43C /* CenterDelegate.swift in Sources */,
 				E2E166B921B09E5F009145E5 /* RoundShadowView.swift in Sources */,
 				E26C1B1E21AF4F7F006A9C99 /* HomeVC.swift in Sources */,
+				E25D20DC21B9B02C0066A43C /* ContainerVC.swift in Sources */,
 				E2E166B721B09CC2009145E5 /* RoundImageView.swift in Sources */,
 				E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */,
+				E25D20DA21B9AF950066A43C /* LeftSideMenuVC.swift in Sources */,
 				E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */,
 				E2E166B521B08174009145E5 /* GradientView.swift in Sources */,
 			);
