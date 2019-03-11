@@ -25,6 +25,7 @@
 		E2E166B921B09E5F009145E5 /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166B821B09E5F009145E5 /* RoundShadowView.swift */; };
 		E2E166BB21B09FF9009145E5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166BA21B09FF9009145E5 /* CircleView.swift */; };
 		E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */; };
+		E2F131512236F381005975F3 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F131502236F381005975F3 /* UIExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E2E166B821B09E5F009145E5 /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
 		E2E166BA21B09FF9009145E5 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowButton.swift; sourceTree = "<group>"; };
+		E2F131502236F381005975F3 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				E26C1B1B21AF4F7F006A9C99 /* AppDelegate.swift */,
+				E2F1314F2236F34C005975F3 /* Extensions */,
 				E25D20DD21B9B3C80066A43C /* Protocols */,
 				E2E166B321B0813D009145E5 /* Model */,
 				E2E166B221B08137009145E5 /* View */,
@@ -219,6 +222,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E2F1314F2236F34C005975F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2F131502236F381005975F3 /* UIExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +459,7 @@
 				E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */,
 				E25D20DA21B9AF950066A43C /* LeftSideMenuVC.swift in Sources */,
 				E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */,
+				E2F131512236F381005975F3 /* UIExtension.swift in Sources */,
 				E2E166B521B08174009145E5 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
