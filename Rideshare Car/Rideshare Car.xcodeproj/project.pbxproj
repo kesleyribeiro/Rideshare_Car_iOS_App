@@ -26,6 +26,7 @@
 		E2E166BB21B09FF9009145E5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166BA21B09FF9009145E5 /* CircleView.swift */; };
 		E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */; };
 		E2F131512236F381005975F3 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F131502236F381005975F3 /* UIExtension.swift */; };
+		E2F1315422370832005975F3 /* SignUpLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1315322370832005975F3 /* SignUpLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E2E166BA21B09FF9009145E5 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		E2E166BC21B0A1CF009145E5 /* RoundShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowButton.swift; sourceTree = "<group>"; };
 		E2F131502236F381005975F3 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		E2F1315322370832005975F3 /* SignUpLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			children = (
 				E26C1B1D21AF4F7F006A9C99 /* HomeVC.swift */,
 				E25D20D921B9AF950066A43C /* LeftSideMenuVC.swift */,
+				E2F1315322370832005975F3 /* SignUpLoginVC.swift */,
 				E25D20DB21B9B02C0066A43C /* ContainerVC.swift */,
 			);
 			path = Controller;
@@ -456,6 +459,7 @@
 				E26C1B1E21AF4F7F006A9C99 /* HomeVC.swift in Sources */,
 				E25D20DC21B9B02C0066A43C /* ContainerVC.swift in Sources */,
 				E2E166B721B09CC2009145E5 /* RoundImageView.swift in Sources */,
+				E2F1315422370832005975F3 /* SignUpLoginVC.swift in Sources */,
 				E26C1B1C21AF4F7F006A9C99 /* AppDelegate.swift in Sources */,
 				E25D20DA21B9AF950066A43C /* LeftSideMenuVC.swift in Sources */,
 				E2E166BD21B0A1CF009145E5 /* RoundShadowButton.swift in Sources */,

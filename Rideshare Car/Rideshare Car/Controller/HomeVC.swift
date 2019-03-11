@@ -18,6 +18,8 @@ class HomeVC: UIViewController, MKMapViewDelegate {
     
     var delegate: CenterDelegate?
     
+    // MARK: Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
