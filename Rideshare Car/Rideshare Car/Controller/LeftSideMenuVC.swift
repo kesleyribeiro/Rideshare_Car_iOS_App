@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeftSideMenuVC: UIViewController {
+class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
 
     // MARK: Life cycle
     
@@ -25,6 +25,11 @@ class LeftSideMenuVC: UIViewController {
         let signUpLoginVC = storyboard.instantiateViewController(withIdentifier: "signUpLoginVC") as? SignUpLoginVC
         present(signUpLoginVC!, animated: true, completion: nil)
         
+    }
+    
+    // Hidden keyboard when user touch in the view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 
    

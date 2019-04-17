@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class HomeVC: UIViewController, MKMapViewDelegate {
+class HomeVC: UIViewController, MKMapViewDelegate, UITextFieldDelegate {
 
     // MARK: IBOutlets
     
@@ -36,6 +36,12 @@ class HomeVC: UIViewController, MKMapViewDelegate {
     
     @IBAction func menuBtnWasPressed(_ sender: Any) {
         delegate?.toggleLeft()
+        self.view.endEditing(true)
+    }
+    
+    // Hidden keyboard when user touch in the view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }

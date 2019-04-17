@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpLoginVC: UIViewController {
+class SignUpLoginVC: UIViewController, UITextFieldDelegate {
 
     // MARK: Life cycle
     
@@ -33,5 +33,9 @@ class SignUpLoginVC: UIViewController {
         self.view.endEditing(true)
     }
 
+    // Hidden keyboard when user touch in the view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
 }

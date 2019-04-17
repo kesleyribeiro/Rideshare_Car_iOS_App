@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class GradientView: UIView {
+class GradientView: UIView, UITextFieldDelegate {
     
     @IBInspectable var topColor: UIColor = #colorLiteral(red: 0, green: 0.5882352941, blue: 1, alpha: 1)  {
         didSet {
@@ -33,6 +33,11 @@ class GradientView: UIView {
         gradientLayer.endPoint = CGPoint(x: 1, y: 0)        
         
         self.layer.addSublayer(gradientLayer)        
+    }
+    
+    // Hidden keyboard when user touch in the view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.endEditing(true) 
     }
     
 }
