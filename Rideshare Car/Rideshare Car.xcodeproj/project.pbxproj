@@ -307,13 +307,16 @@
 				TargetAttributes = {
 					E26C1B1721AF4F7F006A9C99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					E26C1B2B21AF4F81006A9C99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = E26C1B1721AF4F7F006A9C99;
 					};
 					E26C1B3621AF4F81006A9C99 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = E26C1B1721AF4F7F006A9C99;
 					};
 				};
@@ -649,7 +652,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kesleyribeiro.Rideshare-Car";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -668,7 +671,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kesleyribeiro.Rideshare-Car";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -689,7 +692,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kesleyribeiro.Rideshare-CarTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rideshare Car.app/Rideshare Car";
 			};
@@ -711,7 +714,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kesleyribeiro.Rideshare-CarTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rideshare Car.app/Rideshare Car";
 			};
@@ -732,7 +735,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kesleyribeiro.Rideshare-CarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Rideshare Car";
 			};
@@ -753,7 +756,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kesleyribeiro.Rideshare-CarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Rideshare Car";
 			};

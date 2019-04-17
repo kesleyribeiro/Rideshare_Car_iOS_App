@@ -15,9 +15,23 @@ class SignUpLoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.changeKeyboardFrame()
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapOnScreen(sender:)))
+        self.view.addGestureRecognizer(tap)
     }
     
+    // MARK: IBAction
+    
+    @IBAction func cancelBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // MARK: Function
+    
+    @objc func tapOnScreen(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
 
     
 }
