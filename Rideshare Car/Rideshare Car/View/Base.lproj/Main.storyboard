@@ -152,7 +152,7 @@
                                         <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="27"/>
                                         <state key="normal" title="REQUEST CAR"/>
                                         <connections>
-                                            <action selector="actBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjv-d8-zEs"/>
+                                            <action selector="requestCarBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9DY-aH-jPs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -192,8 +192,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="actBtn" destination="Wl8-p9-BhB" id="NjY-69-TuT"/>
                         <outlet property="mapView" destination="cJX-xP-8pj" id="sJK-Jp-uI3"/>
+                        <outlet property="requestBtn" destination="Wl8-p9-BhB" id="5n5-vX-dUq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
