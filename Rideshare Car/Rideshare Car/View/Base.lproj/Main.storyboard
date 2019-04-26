@@ -145,12 +145,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl8-p9-BhB" customClass="RoundShadowButton" customModule="Rideshare_Car" customModuleProvider="target">
                                         <rect key="frame" x="16" y="0.0" width="288" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="43c-ei-hp0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="27"/>
-                                        <state key="normal" title="REQUEST CAR"/>
+                                        <state key="normal" title="REQUEST CAR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="requestCarBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9DY-aH-jPs"/>
                                         </connections>
@@ -323,7 +325,7 @@
                                     <constraint firstAttribute="height" constant="35" id="Z9H-H3-inb"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Passager"/>
+                                    <segment title="Passenger"/>
                                     <segment title="Driver"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -354,6 +356,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="27"/>
                                 <state key="normal" title="SIGN UP / LOGIN"/>
+                                <connections>
+                                    <action selector="authBtnWasPressed:" destination="tnl-eX-cqf" eventType="touchUpInside" id="blA-KQ-o0M"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -384,6 +389,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w5B-Ot-9ZV"/>
                     </view>
+                    <connections>
+                        <outlet property="authBtn" destination="zpw-Ei-afM" id="DlA-GW-ez8"/>
+                        <outlet property="emailTextField" destination="SaE-y3-u2Q" id="pG3-pw-Nya"/>
+                        <outlet property="optionsSegmented" destination="GbN-YW-RKr" id="9FV-v8-Yof"/>
+                        <outlet property="passworfTextField" destination="kSb-i9-YIg" id="ixJ-sD-I59"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZ8-uZ-WTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

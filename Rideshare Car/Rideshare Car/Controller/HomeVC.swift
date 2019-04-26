@@ -43,7 +43,7 @@ class HomeVC: UIViewController, MKMapViewDelegate, UITextFieldDelegate {
         requestBtn.animateButton(shouldLoad: true, withMessage: nil)
     }
     
-    // MARK: Functions
+    // MARK: Function
     
     func addRevealingSplashView() {
         
