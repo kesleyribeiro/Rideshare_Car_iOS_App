@@ -30,7 +30,7 @@ class RoundShadowButton: UIButton {
         
         let spinner = UIActivityIndicatorView()
         spinner.style = .whiteLarge
-        spinner.color = UIColor(red: 0/255, green: 150/255, blue: 255/255, alpha: 1.0)
+        spinner.color = UIColor.green
         spinner.alpha = 0.0
         spinner.hidesWhenStopped = true
         spinner.tag = 27
@@ -59,8 +59,6 @@ class RoundShadowButton: UIButton {
             
         } else {
             
-            self.isUserInteractionEnabled = true
-            
             for subview in self.subviews {
                 if subview.tag == 27 {
                     subview.removeFromSuperview()
@@ -72,6 +70,10 @@ class RoundShadowButton: UIButton {
                 self.frame = self.originalSize!
                 self.setTitle(message, for: .normal)
             })
+            
+            self.isUserInteractionEnabled = true
+            
+            self.setTitle("SIGN UP / LOGIN", for: .normal)
         }
     }
     

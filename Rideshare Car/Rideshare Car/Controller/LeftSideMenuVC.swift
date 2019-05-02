@@ -19,7 +19,7 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
     // MARK: IBOutlets
     
     @IBOutlet weak var userAccountTypeLbl: UILabel!
-    
+    @IBOutlet weak var userAccountTypeImage: UIImageView!
     @IBOutlet weak var userImage: RoundImageView!
     @IBOutlet weak var userEmailLbl: UILabel!
     @IBOutlet weak var pickupModeLbl: UILabel!
@@ -32,23 +32,25 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        pickupModeLbl.isHidden = true
-        pickupModeStatusLbl.isHidden = true
-        pickupModeSwitch.isHidden = true
-        pickupModeSwitch.isOn = false
+        appDelegate.menuContainerVC.toggleLeft()
         
-        observePassengersAndDrivers()
+//        pickupModeLbl.isHidden = true
+//        pickupModeStatusLbl.isHidden = true
+//        pickupModeSwitch.isHidden = true
+//        pickupModeSwitch.isOn = false
         
         if Auth.auth().currentUser == nil {
+            
+            userAccountTypeImage.isHidden = true
             userAccountTypeLbl.text = ""
             userEmailLbl.text = ""
             userImage.isHidden = true
             LoginOutBtn.setTitle("Sign Up / Login", for: .normal)
         } else {
+            observePassengersAndDrivers()
             userEmailLbl.text = Auth.auth().currentUser?.email
-            userAccountTypeLbl.text = ""
+            userAccountTypeImage.isHidden = false
             userImage.isHidden = false
-            pickupModeStatusLbl.text = "OFF"
             LoginOutBtn.setTitle("Logout", for: .normal)
         }
     }
@@ -57,16 +59,13 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func switchWasChanged(_ sender: Any) {
         if pickupModeSwitch.isOn {
-            pickupModeStatusLbl.text = "ON"
-            appDelegate.menuContainerVC.toggleLeft()
+                pickupModeStatusLbl.text = "ON"
             DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": true])
         } else {
-            pickupModeStatusLbl.text = "OFF"
-            appDelegate.menuContainerVC.toggleLeft()
-                DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": false])
+                pickupModeStatusLbl.text = "OFF"
+            DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": false])
         }
     }
-    
     
     @IBAction func signUpLoginBtnWasPressed(_ sender: Any) {
         
@@ -77,20 +76,27 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
         } else {
             do {
                 try Auth.auth().signOut()
+                
+                self.view.layoutIfNeeded()
 
                 userAccountTypeLbl.text = ""
                 userImage.isHidden = true
                 userEmailLbl.text = ""
-                pickupModeLbl.isHidden = true
-                pickupModeStatusLbl.isHidden = true
-                pickupModeSwitch.isHidden = true
-                LoginOutBtn.setTitle("Sign Up / Login", for: .normal)
                 
+                pickupModeLbl.isHidden = true
+                
+                pickupModeStatusLbl.isHidden = true
                 pickupModeStatusLbl.text = "OFF"
-                DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": false])
+                
+                pickupModeSwitch.isHidden = true
+                pickupModeSwitch.isOn = false
+                
+                print("\nUser logout with success.")
+                
+                LoginOutBtn.setTitle("Sign Up / Login", for: .normal)
 
             } catch (let error) {
-                print(error)
+                print("\nError: \(error)")
             }
         }
     }
@@ -104,6 +110,12 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                 for snap in snapshot {
                     if snap.key == Auth.auth().currentUser?.uid {
                         self.userAccountTypeLbl.text = "PASSENGER"
+                        self.userAccountTypeImage.isHidden = false
+                        self.userAccountTypeImage.image = UIImage(named: "Passenger")
+                        self.pickupModeLbl.isHidden = true
+                        self.pickupModeSwitch.isHidden = true
+                        self.pickupModeSwitch.isOn = false
+                        self.pickupModeStatusLbl.isHidden = true
                     }
                 }
             }
@@ -114,6 +126,8 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                 for snap in snapshot {
                     if snap.key == Auth.auth().currentUser?.uid {
                         self.userAccountTypeLbl.text = "DRIVER"
+                        self.userAccountTypeImage.isHidden = false
+                        self.userAccountTypeImage.image = UIImage(named: "Driver")
                         self.pickupModeLbl.isHidden = false
                         self.pickupModeSwitch.isHidden = false
                         self.pickupModeStatusLbl.isHidden = false
@@ -121,6 +135,7 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                         
                         let switchStatus = snap.childSnapshot(forPath: "isPickupModeEnabled").value as! Bool
                         self.pickupModeSwitch.isOn = switchStatus
+                        print("\n\nStatus: \(switchStatus.description)\n\n")
                     }
                 }
             }

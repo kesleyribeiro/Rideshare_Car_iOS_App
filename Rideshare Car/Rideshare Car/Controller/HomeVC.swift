@@ -12,13 +12,16 @@ import RevealingSplashView
 
 class HomeVC: UIViewController, MKMapViewDelegate, UITextFieldDelegate {
 
+    // MARK: Vars
+    
+    var appDelegate = AppDelegate.getAppDelegate()
+    var delegate: CenterDelegate?
+    let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "launchScreenCar")!, iconInitialSize: CGSize(width: 100, height: 100), backgroundColor: .white)
+    
     // MARK: IBOutlets
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var requestBtn: RoundShadowButton!
-    
-    var delegate: CenterDelegate?
-    let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "launchScreenCar")!, iconInitialSize: CGSize(width: 100, height: 100), backgroundColor: .white)
     
     // MARK: Life cycle
     
@@ -29,6 +32,8 @@ class HomeVC: UIViewController, MKMapViewDelegate, UITextFieldDelegate {
         
         // Call the function
         addRevealingSplashView()
+        
+        appDelegate.menuContainerVC.toggleLeft()
     }
 
     

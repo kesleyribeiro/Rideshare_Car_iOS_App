@@ -41,13 +41,13 @@ class SignUpLoginVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func authBtnWasPressed(_ sender: Any) {
         
-        if emailTextField.text != nil && passworfTextField.text != nil {
-            
-            authBtn.animateButton(shouldLoad: true, withMessage: nil)
-            
-            self.view.endEditing(true)
+        if !emailTextField.text!.isEmpty && !passworfTextField.text!.isEmpty {
             
             if let email = emailTextField.text, let password = passworfTextField.text {
+                
+                authBtn.animateButton(shouldLoad: true, withMessage: nil)
+                
+                self.view.endEditing(true)
 
                 // Auth with existing user
                 Auth.auth().signIn(withEmail: email, password: password,
@@ -73,12 +73,13 @@ class SignUpLoginVC: UIViewController, UITextFieldDelegate {
                     }
                     // If not exist a user then create a new user
                     else {
+                        
                         if let errorCode = AuthErrorCode(rawValue: error!._code) {
                             switch errorCode {
                             case .wrongPassword:
                                 print("\nThat password was wrong.\n")
                             default:
-                                print("\nAn unexpected error occured, please try again.\n")
+                                print("\n[Auth user] An unexpected error occured, please try again.\n")
                             }
                         }
                         
@@ -92,9 +93,10 @@ class SignUpLoginVC: UIViewController, UITextFieldDelegate {
                                     case .invalidEmail:
                                         print("\nThat is an invalid email, please try again.\n")
                                     default:
-                                        print("\nAn unexpected error occured, please try again.\n")
+                                        print("\n[New user] An unexpected error occured, please try again.\n")
                                     }
                                 }
+                                self.authBtn.animateButton(shouldLoad: false, withMessage: nil)
                             }
                             // Success to create a new user
                             else {
@@ -122,6 +124,9 @@ class SignUpLoginVC: UIViewController, UITextFieldDelegate {
                     }
                 })
             }
+        } else {
+            self.authBtn.animateButton(shouldLoad: false, withMessage: nil)
+            print("\nYou must enter an email and password.")
         }
     }
     
