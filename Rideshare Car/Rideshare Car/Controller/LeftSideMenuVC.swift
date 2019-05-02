@@ -20,6 +20,7 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userAccountTypeLbl: UILabel!
     @IBOutlet weak var userAccountTypeImage: UIImageView!
+    @IBOutlet weak var userEmailImage: UIImageView!
     @IBOutlet weak var userImage: RoundImageView!
     @IBOutlet weak var userEmailLbl: UILabel!
     @IBOutlet weak var pickupModeLbl: UILabel!
@@ -34,22 +35,22 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
         
         appDelegate.menuContainerVC.toggleLeft()
         
-//        pickupModeLbl.isHidden = true
-//        pickupModeStatusLbl.isHidden = true
-//        pickupModeSwitch.isHidden = true
-//        pickupModeSwitch.isOn = false
-        
         if Auth.auth().currentUser == nil {
             
             userAccountTypeImage.isHidden = true
+            userEmailImage.isHidden = true
             userAccountTypeLbl.text = ""
             userEmailLbl.text = ""
             userImage.isHidden = true
+            pickupModeLbl.isHidden = true
+            pickupModeStatusLbl.isHidden = true
+            pickupModeSwitch.isHidden = true
             LoginOutBtn.setTitle("Sign Up / Login", for: .normal)
         } else {
             observePassengersAndDrivers()
             userEmailLbl.text = Auth.auth().currentUser?.email
             userAccountTypeImage.isHidden = false
+            userEmailImage.isHidden = false
             userImage.isHidden = false
             LoginOutBtn.setTitle("Logout", for: .normal)
         }
@@ -60,7 +61,8 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
     @IBAction func switchWasChanged(_ sender: Any) {
         if pickupModeSwitch.isOn {
                 pickupModeStatusLbl.text = "ON"
-            DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": true])
+           
+            DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": true])                        
         } else {
                 pickupModeStatusLbl.text = "OFF"
             DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": false])
@@ -82,14 +84,15 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                 userAccountTypeLbl.text = ""
                 userImage.isHidden = true
                 userEmailLbl.text = ""
+                userAccountTypeImage.isHidden = true
+                userEmailImage.isHidden = true
                 
                 pickupModeLbl.isHidden = true
                 
                 pickupModeStatusLbl.isHidden = true
-                pickupModeStatusLbl.text = "OFF"
+                pickupModeStatusLbl.text = ""
                 
                 pickupModeSwitch.isHidden = true
-                pickupModeSwitch.isOn = false
                 
                 print("\nUser logout with success.")
                 
@@ -114,7 +117,6 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                         self.userAccountTypeImage.image = UIImage(named: "Passenger")
                         self.pickupModeLbl.isHidden = true
                         self.pickupModeSwitch.isHidden = true
-                        self.pickupModeSwitch.isOn = false
                         self.pickupModeStatusLbl.isHidden = true
                     }
                 }
@@ -131,11 +133,15 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                         self.pickupModeLbl.isHidden = false
                         self.pickupModeSwitch.isHidden = false
                         self.pickupModeStatusLbl.isHidden = false
-                        self.pickupModeStatusLbl.text = "OFF"
                         
                         let switchStatus = snap.childSnapshot(forPath: "isPickupModeEnabled").value as! Bool
                         self.pickupModeSwitch.isOn = switchStatus
-                        print("\n\nStatus: \(switchStatus.description)\n\n")
+                        
+                        if switchStatus {
+                            self.pickupModeStatusLbl.text = "ON"
+                        } else {
+                            self.pickupModeStatusLbl.text = "OFF"
+                        }
                     }
                 }
             }
