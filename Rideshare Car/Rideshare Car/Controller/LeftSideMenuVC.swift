@@ -57,12 +57,11 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: IBAction
-    
+
     @IBAction func switchWasChanged(_ sender: Any) {
         if pickupModeSwitch.isOn {
                 pickupModeStatusLbl.text = "ON"
-           
-            DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": true])                        
+            DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": true])
         } else {
                 pickupModeStatusLbl.text = "OFF"
             DataService.instanceDS.REF_DRIVERS.child(currentUserId!).updateChildValues(["isPickupModeEnabled": false])
@@ -133,15 +132,10 @@ class LeftSideMenuVC: UIViewController, UITextFieldDelegate {
                         self.pickupModeLbl.isHidden = false
                         self.pickupModeSwitch.isHidden = false
                         self.pickupModeStatusLbl.isHidden = false
+                        self.pickupModeSwitch.isOn = false
                         
-                        let switchStatus = snap.childSnapshot(forPath: "isPickupModeEnabled").value as! Bool
-                        self.pickupModeSwitch.isOn = switchStatus
-                        
-                        if switchStatus {
-                            self.pickupModeStatusLbl.text = "ON"
-                        } else {
-                            self.pickupModeStatusLbl.text = "OFF"
-                        }
+//                        let switchStatus = snap.childSnapshot(forPath: "isPickupModeEnabled").value as! Bool
+//                        self.pickupModeSwitch.isOn = switchStatus
                     }
                 }
             }

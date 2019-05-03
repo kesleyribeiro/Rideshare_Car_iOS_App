@@ -18,5 +18,7 @@ class RoundImageView: UIImageView {
         
         self.layer.cornerRadius = self.frame.width / 2
         self.clipsToBounds = true
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.white.cgColor
     }
 }
